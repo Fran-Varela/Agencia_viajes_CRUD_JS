@@ -1,11 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Agencia de Viajes</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+    <h1>Agencia de Viajes</h1>
+
+    <!-- Seccion de clientes -->
+    <section>
+        <h2>Clientes</h2>
+
+        <input type="text" id="nombre" placeholder="Nombre">
+        <input type="text" id="apellido" placeholder="Apellidos">
+        <input type="email" id="email" placeholder="Correo Electrónico">
+        <input type="text" id="telefono" placeholder="Teléfono">
+        <button id="btnCliente">Añadir Cliente</button>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellidos</th>
+                    <th>Email</th>
+                    <th>Teléfono</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="listaClientes"></tbody>
+        </table>
+    </section>
+
+    <!-- Seccion de viajes -->
+    <section>
+        <h2>Viajes</h2>
+
+        <input type="text" id="codigo" placeholder="Código">
+        <input type="text" id="destino" placeholder="Destino">
+        <input type="number" id="precio" placeholder="Precio">
+        <select id="tipoViaje">
+            <option value="vuelo">Vuelo</option>
+            <option value="hotel">Hotel</option>
+            <option value="paquete">Paquete</option>
+        </select>
+        <button id="btnViaje">Añadir Viaje</button>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Destino</th>
+                    <th>Precio</th>
+                    <th>Tipo</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="listaViajes"></tbody>
+        </table>
+    </section>
+
+    <!-- Seccion de reservas -->
+    <section>
+        <h2>Reservas</h2>
+
+        <select id="selectCliente"></select>
+        <select id="selectViaje"></select>
+        <button id="btnReserva" type="button">Crear Reserva</button>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Cliente</th>
+                    <th>Viaje</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="listaReservas"></tbody>
+        </table>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
