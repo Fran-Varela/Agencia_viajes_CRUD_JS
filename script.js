@@ -173,7 +173,7 @@ function mostrarReservas() {
     });
 }
 
-// Se guarda el índice del array, es para saber qué cliente o viaje se seleccionó
+// Se guarda el índice del array, es para saber que cliente o viaje se seleccionó
 function cargarSelects() {
     selectCliente.innerHTML = "";
     selectViaje.innerHTML = "";
